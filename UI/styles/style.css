@@ -1,4 +1,9 @@
 
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
 body{
     background-image:url(../assets/bg.jpg);
     background-size: cover;
@@ -19,7 +24,7 @@ h1{
     height: 70%;
 }
 .bg{
-    background: wheat;
+    background: rgb(32, 32, 30);
 	padding: 20px;
 	margin: 20px;
     position: absolute center;
@@ -89,7 +94,7 @@ p{
 	font-family: verdana;
     background: wheat;
 	padding: 20px;
-	margin: 0% 5% 0% 25%;
+	margin: 0% 5% 0% 5%;
     position: absolute center;
     border-radius: 22px;
     border-color: beige;
