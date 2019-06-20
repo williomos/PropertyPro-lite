@@ -1,0 +1,80 @@
+<html>
+    <head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        background: url(../assets/bg.jpg);
+        background-size: cover;
+    }
+    .box{
+         position: absolute;
+         left: 50%;
+         top:50%;
+         transform: translate(-50%,-50%);
+         width: 700px;
+         height: 70%;
+         padding: 100px;
+         background: wheat;
+         box-sizing: border-box;
+         box-shadow: 0px 15px 25px rgba(0,0,0,-5);
+         border-radius: 25px;
+    }
+    .box h4{
+        margin: 0 0 30;
+        padding: 0;
+        text-align: center;
+    }
+    .box .inputbox{
+        position: relative;
+    }
+    .box .inputbox input{
+        width: 70%;
+        padding: 10px 0px;
+        font-size: 16px;
+         
+    }
+    .box .inputbox table{
+        transition: .5s;
+        font-weight: bold;
+    }
+    .box input[type="submit"] {
+        border-radius: 5px;
+        background:#03a9f4;
+        width: 150px;
+        height: 30px;
+        font-weight: bold;
+    }
+    .box input[type="button"]{
+        border-radius: 5px;
+        background:#03a9f4;
+        width: 150px;
+        height: 30px;
+        font-weight: bold; 
+    }
+    </style>
+    </head>
+    <body>
+        <div class="box">
+            <h2>FILL THIS FORM PLEASE</h2>
+        <form>
+            <table border="0px">
+            <div class="inputbox">
+            <tr><td><label><B>FIRST NAME</B></label></td><td><input type="text" name="" required=""></td></tr>                    
+            <tr><td><label><B>LAST NAME</B></label></td><td><input type="text" name="" required=""></td></tr>
+            <tr><td><label><B>E-MAIL</B></label></td><td><input type="text" name="" required=""></td></tr>
+            <tr><td><label><B>PHONE NUMBER</B></label></td><td><input type="text" name="" required=""></td></tr>
+            <tr><td><label><B>USERNAME</B></label></td><td><input type="text" name="" required=""></td></tr>
+            <tr><td><label><B>PASSWORD</B></label></td><td><input type="text" name="" required=""></td></tr>
+        </div>
+            
+        </table>
+        <br><br><br>
+        <input type="submit" name="" value="CREATE ACCOUNT">
+        <a href="admin.html"><input type="button" name="" value="BACK"></a>
+
+        </form>
+        </div>
+    </body>
+</html>
