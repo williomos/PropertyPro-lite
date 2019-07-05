@@ -1,0 +1,62 @@
+<html>
+    <header>
+<style>
+    *{
+        margin-top: 0;
+        padding: 0;
+    }
+    #topbar{
+        position: fixed;
+        height: 10%;
+        width: 80%;
+        top: -10%;
+        background-color: black;
+    }
+    #topbar ui{
+        color: white;
+        font-size: 30px;
+    }
+    .toggle-btn{
+        position: absolute;
+        top: 105%;
+        right: -50px;
+
+    }
+    .toggle-btn span{
+        display: block;
+        background-color: rgb(12, 12, 12);
+        width: 30px;
+        height: 5px;
+        margin: 3px;
+    }
+    #topbar.active{
+        top:0;
+    }
+    .hcl{
+        background-color: aqua;
+    }
+    </style>
+    <script type="text/javascript">
+         function togglemenu(){
+             document.getElementById('topbar').classList.toggle('active');
+         }
+    </script>
+    </header>
+    <body>
+        <div id="topbar" onclick="togglemenu()">
+            <header class="hcl">
+                <div class="toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+     
+                </div>
+            </header>
+            <ul>
+                <ui>Home</ui>
+                <ui>Sign in</ui>
+                <ui>Sign up</ui>
+            </ul>
+        </div>
+    </body>
+</html>

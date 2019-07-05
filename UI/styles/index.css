@@ -1,0 +1,203 @@
+body{
+   font: 15px/1.5 Arial, Helvetica, sans-serif;
+   padding: 0;
+   margin: 0;
+   background-color: #c0bdbd;
+}
+/* All styles globally*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+button{
+    background: #e8491d;
+    border-radius: 10px;
+    font-weight: bold;
+    width: auto;
+    height: 35px;
+    border: 0;
+}
+/* Header styles*/
+header{
+    background: #35424a;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #fff 3px solid;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #branding{
+    float: left;
+}
+header #branding h1{
+    margin: 0;
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+header .highlight, header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+header a:hover{
+    color:#cccccc;
+    font-weight: bold;
+}
+/* Show case style*/
+#showcase{
+    min-height: 450px;
+    background: url("../assets/house1.jpg") no-repeat  center;
+    text-align: center;
+    color: rgb(233, 52, 52);
+}
+#showcase{
+    margin-top: 10px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* SingMsg styles*/
+
+#signMsg{
+    padding: 15px;
+    color:#fff;
+    background: #35424a;
+}
+#signMsg h1{
+    float: left;
+}
+#signMsg button{
+    float: right;
+    margin-top: 20px;
+    font-weight: bold;
+    color: black;
+}
+/* boxes style*/
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+#boxes .box img{
+    width: 150px;
+    height: 120px;
+}
+#boxes .box p{
+    padding: auto;
+}
+footer{
+    padding: 1px;
+    margin-top: 20px;
+    color: #fff;
+    background-color:  #35424a;
+    text-align: center;
+    
+}
+
+/*For gallery*/
+  div.gallery:hover {
+	border: 0px solid #777;
+  }
+  
+  div.gallery img {
+	width: 100%;
+	height: auto;
+  }
+  @media(max-width: 768px){
+      header #branding,
+      header nav,
+      header nav li,
+      #signMsg h1,
+      #signMsg button,
+      #boxes .box{
+        float: none;
+        text-align: center;
+        width:100%;
+      }
+      header{
+          padding-bottom: 20px;
+      }
+      #showcase{
+        margin-top: 10px;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+      #showcase h1{
+          margin-top: 100px;
+          color: #e8491d;
+      }
+      #showcase p{
+          margin-bottom: 5px;
+          color: #e8491d;
+      }
+      .boxlog{
+        position: relative;
+          left:auto;
+          right: auto;
+          text-align: center;
+      }
+  }
+  /* LOGIN FORM*/
+
+  .boxlog{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background-color:rgba(35, 20, 73, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0px 15px 25px rgba(0,0,0,-5);
+    border-radius: 25px;
+    color: #fff;
+}
+.boxlog h2{
+   margin: 0 0 30;
+   padding: 0;
+   text-align: center;
+}
+.boxlog .inputbox{
+   position: relative;
+}
+.boxlog .inputbox input{
+   width: 100%;
+   padding: 10px 0px;
+   font-size: 16px;  
+}
+.boxlog .inputbox label{
+   transition: .5s;
+}
+.boxlog input[type="submit"]{
+   border-radius: 5px;
+   background:#03a9f4;
+   width:auto;
+   height: 30px;
+   font-weight: bold;
+}
+.boxlog input[type="button"]{
+   border-radius: 5px;
+   background:#03a9f4;
+   width: 70px;
+   height: 30px;
+   font-weight: bold;
+}
