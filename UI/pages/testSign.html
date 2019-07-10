@@ -7,97 +7,39 @@
     <link href="../styles/index.css" type="text/css" rel="stylesheet">
     <title>Login Form</title>
 </head>
-<body>
+<body style="overflow:hidden; background-color: white;">
     <header>
         <div class="container">
             <div id="branding">
-<h1><span class="highlight">PROPERTY</span> ProLite</h1>
+                <a href="../pages/home.html"><h1><span class="highlight">PROPERTY</span> ProLite</h1></a>
             </div>
             <nav>
                 <ul>
                     <a href="home.html"><li>HOME</a></li>
-                    <a href="#"><li>OUR SERVICES</a></li>
+                    <a href="#"><li>ABOUT</a></li>
                     <a href="testSign.html"><li class="current">SIGN IN</a></li>
                 
                 </ul>
             </nav>
         </div>
     </header>
-    <section id="showcase">
-        <div class="container">
-            <h1> Welcome to PropertyPro-lite</h1>
-            <p>Everything is affordable and your home is here!!!</p>
-        </div>
-      </section>
-      <section id="signMsg">
-          <div class="container">
-              <h1>Please Sign up to Our ProLite</h1>
-              <a href="../pages/testsignup.html"><button type="submit" class="btn-1">GET STARTED</a></button>
-          </div>
-        </section>
-        <section id="boxes">
-                <div class="gallery">
-            <div class="container">
-                <div class="box">
-                        
-                    <img src="../assets/house4.jpg"></a>
-                    <h3>Single Houses</h3>
-                    <p>This is being sold at a very affordable price. You can click the image to see the details</p>
-                </div>
-                <div class="box">
-                        
-                        <img src="../assets/house2.jpg"></a>
-                        <h3>Vacation Houses</h3>
-                        <p>This is is at a very nice place in woods. You can click the image to see the details</p>
-                    </div>
-                <div class="box">
-                        
-                        <img src="../assets/house3.jpg"></a>
-                    <h3>Building Houses</h3>
-                    <p>This is being rented or sold. It is very cheap. You can click the image to see the details</p>
-                </div>
-                <div class="box">
-                        
-                        <img src="../assets/advert1.jpg"></a>
-                    <h3>Appartment</h3>
-                    <p>We have full furnished and unfurnished appartments.Click the image</p>
-                </div>
-                        <div class="box">
-                                
-                            <img src="../assets/hs2.jpeg"></a>
-                            <h3>Single Houses</h3>
-                            <p>This is being sold at a very affordable price. You can click the image to see the details</p>
-                        </div>
-                       <div class="box">
-                            
-                                <img src="../assets/hs3.jpg"></a>
-                                <h3>Single Houses</h3>
-                                <p>This is being sold at a very affordable price. You can click the image to see the details</p>
-                            </div>
-
-                            
-                </div>
-          </section>
-          
-        </div>
-     </div>
-           
+    
      <div class="boxlog">
             <h2>LOGIN FORM</h2>
         <form>
             <div class="inputbox">
-            <input type="text" name="" placeholder="Enter your username/email"><br/>
-            <label>UserName</label><br/></div>
+            <input type="email" name="" placeholder="Enter your username/email" required=""><br/>
+            <label></label><br/></div>
              <div class="inputbox">
-            <input type="password" name="" placeholder="Enter your password"><br/>
-            <label>password</label><br/></div>
-            <input type="submit" name="" value="LOGIN"><label style="float: right"><a href="resetPassword.html" style="color: white">Reset password</a></label><br><br>
+            <input type="password" name="" placeholder="Enter your password" required=""><br/>
+            <label></label><br/></div>
+            <a href="../pages/editProperty.html"><input type="button" name="" value="LOGIN"><label><a href="resetPassword.html" style="color: white; float: right; margin: 10px;">Reset password</a></label><br><br>
             <label>If you don't have an account please</label><br>
             <a href="../pages/testsignup.html"><input type="button" name="" value="SIGN UP"></a>
             
         </form>
         </div>
 
-          <footer><p>PropertyPro-lite Design, Copyright &copy; 2019</p></footer>
+          <footer style=" position:absolute; bottom:0px; width: 100%;"><p>PropertyPro-lite Design, Copyright &copy; 2019</p></footer>
 </body>
 </html>
