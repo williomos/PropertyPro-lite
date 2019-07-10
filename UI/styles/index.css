@@ -10,6 +10,9 @@ body{
     margin: auto;
     overflow: hidden;
 }
+ #adminbtn{
+    margin-top: 15px;
+}
 ul{
     margin: 0;
     padding: 0;
@@ -60,15 +63,14 @@ header a:hover{
 }
 /* Show case style*/
 #showcase{
-    min-height: 450px;
-    background: url("../assets/house1.jpg") no-repeat  center;
+    height: 450px;
+    background: url("../assets/househome.jpg") no-repeat center;
     text-align: center;
-    color: rgb(233, 52, 52);
+    color: #fff;
+    
 }
 #showcase{
-    margin-top: 10px;
-    font-size: 50px;
-    margin-bottom: 10px;
+    font-size: 40px;
 }
 
 /* SingMsg styles*/
@@ -86,6 +88,9 @@ header a:hover{
     margin-top: 20px;
     font-weight: bold;
     color: black;
+}
+#signMsg a{
+    color: white;
 }
 /* boxes style*/
 #boxes{
@@ -111,61 +116,17 @@ footer{
     background-color:  #35424a;
     text-align: center;
     
-}
-
-/*For gallery*/
-  div.gallery:hover {
-	border: 0px solid #777;
-  }
-  
-  div.gallery img {
-	width: 100%;
-	height: auto;
-  }
-  @media(max-width: 768px){
-      header #branding,
-      header nav,
-      header nav li,
-      #signMsg h1,
-      #signMsg button,
-      #boxes .box{
-        float: none;
-        text-align: center;
-        width:100%;
-      }
-      header{
-          padding-bottom: 20px;
-      }
-      #showcase{
-        margin-top: 10px;
-        font-size: 40px;
-        margin-bottom: 10px;
-    }
-      #showcase h1{
-          margin-top: 100px;
-          color: #e8491d;
-      }
-      #showcase p{
-          margin-bottom: 5px;
-          color: #e8491d;
-      }
-      .boxlog{
-        position: relative;
-          left:auto;
-          right: auto;
-          text-align: center;
-      }
-  }
-  /* LOGIN FORM*/
-
-  .boxlog{
+}  
+/* LOGIN FORM*/
+.boxlog{
     position: absolute;
     left: 50%;
-    top:50%;
+    top:53%;
     transform: translate(-50%,-50%);
     width: 400px;
     padding: 40px;
-    background-color:rgba(35, 20, 73, 0.8);
+    /*background-color:rgba(35, 20, 73, 0.8);*/
+    background-color: #35424a;
     box-sizing: border-box;
     box-shadow: 0px 15px 25px rgba(0,0,0,-5);
     border-radius: 25px;
@@ -183,21 +144,225 @@ footer{
    width: 100%;
    padding: 10px 0px;
    font-size: 16px;  
+   border: none;
 }
 .boxlog .inputbox label{
    transition: .5s;
+   float: right;
 }
 .boxlog input[type="submit"]{
    border-radius: 5px;
-   background:#03a9f4;
+   background:#e8491d;
    width:auto;
    height: 30px;
    font-weight: bold;
+   border: none;
+   color: #fff;
 }
 .boxlog input[type="button"]{
    border-radius: 5px;
-   background:#03a9f4;
+   background:#e8491d;
    width: 70px;
    height: 30px;
    font-weight: bold;
+   border: none;
+   color: #fff;
 }
+/*sign up page*/
+.boxlogsign{
+    position: absolute;
+    left: 50%;
+    top:54%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 37px;
+    background-color: #35424a;
+    box-sizing: border-box;
+    box-shadow: 0px 15px 25px rgba(0,0,0,-5);
+    border-radius: 25px;
+    color: #fff;
+}
+.boxlogsign h2{
+    margin: 0 0 30;
+    padding: 0;
+    text-align: center;
+ }
+ .boxlogsign .inputbox{
+    position: relative;
+ }
+ .boxlogsign .inputbox input{
+    width: 100%;
+    padding: 8px 0px;
+    font-size: 14px;  
+    border: none;
+ }
+ .boxlogsign .inputbox label{
+    transition: .5s;
+ }
+ .boxlogsign input[type="submit"]{
+    border-radius: 5px;
+    background:#e8491d;
+    width:auto;
+    height: 30px;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+ }
+ .boxlogsign input[type="button"]{
+    border-radius: 5px;
+    background:#e8491d;
+    width: 70px;
+    height: 30px;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+ }
+/* details of images*/
+
+#boxes .boxim img{
+    width: 180px;
+    height: 150px;
+}
+#boxes .boxim{
+    width: 300px;
+    height:auto;
+    background-color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+    margin: 7px;
+}
+.boxim img{
+    margin: 1rem auto;
+    padding: 5px;
+}
+
+/*Image details*/
+    
+.imgdetails{
+    width: 500px;
+    height:auto;
+    background-color: white;
+    font-size: 15px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 900;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0% 50% 5% 0%;
+}
+.imgdetails img{
+    width: 400px;
+    height: 250px;
+    margin: 1rem auto;
+}
+
+.boxlogc{
+    position: absolute;
+    left: 50%;
+    top:53%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    /*background-color:rgba(35, 20, 73, 0.8);*/
+    background-color: #35424a;
+    box-sizing: border-box;
+    box-shadow: 0px 15px 25px rgba(0,0,0,-5);
+    border-radius: 25px;
+    color: #fff;
+}
+
+.boxlogc h2{
+    margin: 0 0 30;
+    padding: 0;
+    text-align: center;
+ }
+ .boxlogc .inputbox{
+    position: relative;
+ }
+ .boxlogc .inputbox input{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;  
+    border: none;
+ }
+ .boxlogc .inputbox label{
+    transition: .5s;
+    float: right;
+ }
+ .boxlogc input[type="submit"]{
+    border-radius: 5px;
+    background:#e8491d;
+    width:auto;
+    height: 30px;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+ }
+ .boxlogc input[type="button"]{
+    border-radius: 5px;
+    background:#e8491d;
+    width: 70px;
+    height: 30px;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+ }
+
+  @media(max-width: 768px){
+      header #branding,
+      header nav,
+      #signMsg h1,
+      #signMsg button,
+      #boxes .box{
+        float: none;
+        text-align: center;
+        width:100%;
+      }
+      header nav ul li{
+          display: block;
+          text-align: center;
+          margin: 0;   
+           }
+      #showcase{
+        margin-top: 10px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+      #showcase h1{
+          margin-top: 70px;
+          color: #fff;
+      }
+      #showcase p{
+          margin-bottom: 5px;
+          color: #fff;
+      }
+     .boxlog{
+        position: relative;
+          left:auto;
+          right: auto;
+          text-align: center;
+      }
+      .boxlogsign{
+        position: relative;
+          left:auto;
+          right: auto;
+          text-align: center;
+          width: auto;
+      }
+      .imgdetails{
+          width: 350px;
+      }
+      .imgdetails img{
+        width: 350px;
+    }
+    #boxes{
+        width: 400px;
+    }
+    .boxlogc{
+        width: 380px;
+    }
+ }
+  
+
+  
