@@ -1,17 +1,30 @@
-module.exports = {
-    "env": {
-        "browser": true,
-        "es6": true
+{
+    "extends":"airbnb-base",
+    "parserOptions" : {
+        "ecmaVersion" : 6
     },
-    "extends": "eslint:recommended",
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
+    "env" : {
+        "node"     : true ,
+        "browser"  : true ,
+        "es6"      : true
     },
-    "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module"
+    "rules" : {
+        "linebreak-style": 0,
+        "comma-dangle" : [
+            "error" , "never"
+        ],
+        "no-unused-vars" : [
+            "error" , {
+                "vars" : "local" ,  "args" : "none"
+            }
+        ]
     },
+<<<<<<< Updated upstream:.eslintrc.js
     "rules": {
     }
 };
+=======
+    "globals": {"Promise": true}
+ }
+ 
+>>>>>>> Stashed changes:.eslintrc
