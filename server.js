@@ -1,8 +1,14 @@
+/* eslint-disable no-console */
+/* eslint-disable no-undef */
 //import app from "./app";
 
+
+//import app from './app';
 const app = require('./app');
-const port = process.env.PORT || 5000;
+const http = require('http');
 
-app.listen(port);
+const server = http.createServer(app);
 
-console.log('server started on port', port);
+const PORT = process.env.PORT || 3000;
+
+server.listen(PORT,()=> console.log(`listening on port ${PORT}...`));

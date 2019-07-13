@@ -1,12 +1,15 @@
-'use strict';
+/* eslint-disable no-undef */
+"use strict";
 
-var _app = require('../app');
+import _app from "./app";
 
 var _app2 = _interopRequireDefault(_app);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 3000; /* eslint-disable no-console */
+/* eslint-disable no-undef */
+
 
 _app2.default.listen(port);
 
