@@ -1,5 +1,4 @@
-/* eslint-disable no-console */
-/* eslint-disable no-undef */
+
 const Joi = require('joi');
 const express = require('express');
 
